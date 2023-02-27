@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Cakeview from "./features/cake/cakeView";
+import Tofeeview from "./features/tofee/toffeView";
+import Icecreamview from "./features/icecream/icecreamView";
+import Userview from "./features/user/userView";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cakeview />
+      <Icecreamview />
+      <Tofeeview />
+      <Userview />
     </div>
   );
 }
